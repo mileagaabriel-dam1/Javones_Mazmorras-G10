@@ -51,4 +51,9 @@ public class MAGO extends PERSONAJE {
 
     public void mostrarInfo() {
         System.out.println("Informacion del mago: ");
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Nivel: " + getNivel());
+        System.out.println("Puntos de Vida: " + getPuntosVida());
+        System.out.println("Maná: " + mana);
+        System.out.println("Protegido: " + (estaProtegido() ? "Sí" : "No"));
     }
