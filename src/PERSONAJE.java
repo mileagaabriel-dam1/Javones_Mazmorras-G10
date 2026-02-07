@@ -28,5 +28,13 @@ public class PERSONAJE {
             cantidad = cantidad / 2;
             System.out.println(nombre + " está protegido. Daño reducido a la mitad: " + cantidad);
         }
-
+    //En caso de que le ataquen si esta protegido el daño se reduce a la mitad
+        
+        this.puntosVida -= cantidad;
+        if (this.puntosVida < 0) {
+            this.puntosVida = 0;
+        }
+        
+        System.out.println(nombre + " ha recibido " + cantidad + " puntos de daño. Vida restante: " + this.puntosVida);
+    }
 }
