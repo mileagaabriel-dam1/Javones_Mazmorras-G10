@@ -43,3 +43,27 @@ public class Guerrero extends PERSONAJE {
     public PERSONAJE estaProtegiendo() {
         return compañeroProtegido;
     }
+    
+    
+    public void mostrarInfo() {
+        System.out.println("La informacion del guerrero:");
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Nivel: " + getNivel());
+        System.out.println("Puntos de Vida: " + getPuntosVida());
+        
+        
+        //Cogemos toda la informacion del guerrero, nombre, su nivel y la vida actual.
+        
+        if (compañeroProtegido != null) {
+            System.out.println("Protegiendo a: " + compañeroProtegido.getNombre());
+        } else {
+            System.out.println("Protegiendo a: Nadie");
+        }
+        
+        //Se muestra por pantalla si esta protegiendo a alguien, si lo esta, mostrar a quien, sino, indicar que ni protege a nadie.
+        
+        System.out.println("Estado protección personal: " + (estaProtegido() ? "Sí" : "No"));
+        
+        //Se muestra por pantalla si el personaje esta protegido o no
+    }
+}
