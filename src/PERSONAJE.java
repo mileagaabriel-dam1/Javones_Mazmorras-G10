@@ -84,5 +84,9 @@ public class PERSONAJE {
         this.nivel = nivel;
     }
 
+    public int getPuntosVida() {
+        return puntosVida;
+    }
+
 }
 
