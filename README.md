@@ -5,3 +5,12 @@ Este proyecto consiste en crear una especie de JUEGO RPG, mediante un codigo JAV
 Ponerle todos los personajes, PERSONAJE, MAGO, GUERRERO, LADRON.
 
 Añadiendo un INVENTARIO y diferentes EQUIPAMIENTOS.
+
+
+INTEGRANTES DEL EQUIPO:
+
+GABRIEL ANDREI MILEA
+
+IAN RUBIO SANCHEZ
+
+OSCAR MUÑOZ
