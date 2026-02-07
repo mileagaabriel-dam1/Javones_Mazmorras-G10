@@ -35,7 +35,20 @@ public class MAGO extends PERSONAJE {
     
     public void recargarMana(int cantidad) {
         mana += cantidad;
-        System.out.println(getNombre() + " recarga " + cantidad + " puntos de maná.");
+        System.out.println(getNombre() + " se han recargado " + cantidad + " puntos de maná.");
         System.out.println("Maná actual: " + mana);
 
 }
+    }
+    
+    //Aqui hacemos el codigo para que se pueda recargar mana.
+    
+    public int getMana() {
+        return mana;
+    }
+    
+    //Aqui es donde mostramos la mana que tiene el mago disponible.
+
+    public void mostrarInfo() {
+        System.out.println("Informacion del mago: ");
+    }
