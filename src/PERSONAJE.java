@@ -21,4 +21,12 @@ public class PERSONAJE {
         System.out.println("Protegido: " + (this.protegido ? "Sí" : "No"));
     }
     
+    //Se muestra por pantalla el nombre, nivel, la vida actual y si esta protegido o no
+    
+    public void bajarVida(int cantidad) {
+        if (this.protegido) {
+            cantidad = cantidad / 2;
+            System.out.println(nombre + " está protegido. Daño reducido a la mitad: " + cantidad);
+        }
+
 }
