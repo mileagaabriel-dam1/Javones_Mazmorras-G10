@@ -55,5 +55,12 @@ public class PERSONAJE {
         this.inventario.agregarEquipamiento(equipamiento);
     }
 
+    //Agregar equipamiento al inventario
+    
+    public void setProtegido(boolean protegido) {
+        this.protegido = protegido;
+        System.out.println(nombre + " está " + (protegido ? "protegido" : "desprotegido"));
+    }
+
 }
 
