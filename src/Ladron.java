@@ -48,4 +48,12 @@ public class Ladron extends PERSONAJE {
         }
     }
 
+    //En caso de que se quiera hacer visible, hacemos el codigo arriba.
+    
+    public boolean estaInvisible() {
+        return invisible;
+    }
+    
+    //Esto es para saber si esta invisible o no.
+
 }
