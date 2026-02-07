@@ -62,5 +62,11 @@ public class PERSONAJE {
         System.out.println(nombre + " está " + (protegido ? "protegido" : "desprotegido"));
     }
 
+    //Aqui se cambia el estado del personaje
+    
+    public boolean estaProtegido() {
+        return this.protegido;
+    }
+
 }
 
