@@ -88,5 +88,9 @@ public class PERSONAJE {
         return puntosVida;
     }
 
+    public void setPuntosVida(int puntosVida) {
+        this.puntosVida = puntosVida;
+    }
+
 }
 
