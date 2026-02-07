@@ -67,4 +67,26 @@ public class Ladron extends PERSONAJE {
     
     //Se muestra el nombre, nivel, la vida actual, el estado si esta invisible o no, y si esta protegido por alguien o no lo esta.
 
+     public void bajarVida(int cantidad) {
+        if (invisible) {
+            int probabilidad = (int) (Math.random() * 100);
+            
+            if (probabilidad < 50) {
+                System.out.println("¡" + getNombre() + " esquiva el ataque gracias a su invisibilidad!");
+                return; // No recibe daño
+                
+                //El ladon en caso de estar invisible, puede esquivar el ataque y no recibir daño, esto se muestra por pantalla.
+                
+            } else {
+                System.out.println(getNombre() + " es golpeado a pesar de estar invisible.");
+            }
+        }
+
+         //Si le da el ataque, mostrarlo por pantalla.
+        
+        super.bajarVida(cantidad);
+        
+        //Bajarle la vida al ladron.
+    }
+
 }
