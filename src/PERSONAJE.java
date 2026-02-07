@@ -48,6 +48,12 @@ public class PERSONAJE {
     public Inventario getInventario() {
         return this.inventario;
     }
+    
+    //Mirar el inventario
+    
+    public void agregarEquipamiento(Equipamiento equipamiento) {
+        this.inventario.agregarEquipamiento(equipamiento);
+    }
 
 }
 
