@@ -94,3 +94,4 @@ public class PERSONAJE {
 
 }
 
+//Declaramos la vida, nivel, nombre, etc.
