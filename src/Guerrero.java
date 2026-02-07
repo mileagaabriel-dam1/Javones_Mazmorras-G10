@@ -17,4 +17,29 @@ public class Guerrero extends PERSONAJE {
         if (this.compañeroProtegido != null) {
             dejarDeProteger();
         }
- 
+        
+        // Proteger al nuevo compañero
+        this.compañeroProtegido = compañero;
+        compañero.setProtegido(true);
+        
+        System.out.println(getNombre() + " ahora está protegiendo a " + compañero.getNombre());
+        
+        //Si se decide proteger a alguien, mostrar a quien
+    }
+    
+    // Método para dejar de proteger
+    public void dejarDeProteger() {
+        if (this.compañeroProtegido != null) {
+            System.out.println(getNombre() + " deja de proteger a " + compañeroProtegido.getNombre());
+            compañeroProtegido.setProtegido(false);
+            this.compañeroProtegido = null;
+        } else {
+            System.out.println(getNombre() + " no estaba protegiendo a nadie.");
+        }
+    }
+    
+    //Aqui se hace el codigo para dejar de proteger a alguien si se elige esa opcion, sino protegia a nadie, mostrarlo.
+    
+    public PERSONAJE estaProtegiendo() {
+        return compañeroProtegido;
+    }
