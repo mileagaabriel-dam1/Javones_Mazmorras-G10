@@ -48,4 +48,23 @@ public class Ladron extends PERSONAJE {
         }
     }
 
+    //En caso de que se quiera hacer visible, hacemos el codigo arriba.
+    
+    public boolean estaInvisible() {
+        return invisible;
+    }
+    
+    //Esto es para saber si esta invisible o no.
+
+    public void mostrarInfo() {
+        System.out.println("La informacion del ladron: ");
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Nivel: " + getNivel());
+        System.out.println("Puntos de Vida: " + getPuntosVida());
+        System.out.println("Invisible: " + (invisible ? "Sí" : "No"));
+        System.out.println("Protegido: " + (estaProtegido() ? "Sí" : "No"));
+    }
+    
+    //Se muestra el nombre, nivel, la vida actual, el estado si esta invisible o no, y si esta protegido por alguien o no lo esta.
+
 }
