@@ -29,3 +29,13 @@ public class MAGO extends PERSONAJE {
     }
     
     //La parte de los hechizos, si hay suficiente mana, se gastara, sino la hay se mostrara por pantalla la que se necesita.
+    
+
+    
+    
+    public void recargarMana(int cantidad) {
+        mana += cantidad;
+        System.out.println(getNombre() + " recarga " + cantidad + " puntos de maná.");
+        System.out.println("Maná actual: " + mana);
+
+}
