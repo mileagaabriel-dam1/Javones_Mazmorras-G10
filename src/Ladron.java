@@ -82,4 +82,11 @@ public class Ladron extends PERSONAJE {
             }
         }
 
+         //Si le da el ataque, mostrarlo por pantalla.
+        
+        super.bajarVida(cantidad);
+        
+        //Bajarle la vida al ladron.
+    }
+
 }
