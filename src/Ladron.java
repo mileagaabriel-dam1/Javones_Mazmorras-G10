@@ -39,4 +39,13 @@ public class Ladron extends PERSONAJE {
     
     //Metodo para que el ladron se haga invisible.
 
+    public void hacerseVisible() {
+        if (invisible) {
+            invisible = false;
+            System.out.println(getNombre() + " vuelve a ser visible.");
+        } else {
+            System.out.println(getNombre() + " ya está visible.");
+        }
+    }
+
 }
