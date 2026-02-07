@@ -76,5 +76,9 @@ public class PERSONAJE {
         this.nombre = nombre;
     }
 
+     public int getNivel() {
+        return nivel;
+    }
+
 }
 
