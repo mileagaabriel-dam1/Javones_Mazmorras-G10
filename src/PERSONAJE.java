@@ -68,5 +68,9 @@ public class PERSONAJE {
         return this.protegido;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
 }
 
