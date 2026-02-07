@@ -12,5 +12,13 @@ public class PERSONAJE {
         this.protegido = false;
         this.inventario = new Inventario();
     }
-
+    // Método para mostrar información del personaje
+    public void mostrarInfo() {
+        System.out.println("Informacion del PERSONAJE:");
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Nivel: " + this.nivel);
+        System.out.println("Puntos de Vida: " + this.puntosVida);
+        System.out.println("Protegido: " + (this.protegido ? "Sí" : "No"));
+    }
+    
 }
