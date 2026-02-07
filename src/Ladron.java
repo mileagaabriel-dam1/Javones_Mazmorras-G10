@@ -16,4 +16,14 @@ public class Ladron extends PERSONAJE {
         this.invisible = invisibleInicial;
     }
 
+    public void robar() {
+        if (invisible) {
+            System.out.println(getNombre() + " Estas robando, estas invisible, pero ten cuidado!");
+            System.out.println("Felicidades, has robado sin ser detectado");
+        } else {
+            System.out.println(getNombre() + "Recuerda que eres visible!, decides robar.");
+            System.out.println("Te han atrapado, ser visible no es nada facil.");
+        }
+    }
+
 }
