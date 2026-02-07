@@ -42,5 +42,12 @@ public class PERSONAJE {
         System.out.println(nombre + " ha sido curado por " + cantidad + " puntos. Vida actual: " + this.puntosVida);
         
     }
+    
+    //Si se le decide curar, mostrarlo por pantalla y la vida que se ha recuperado.
+    
+    public Inventario getInventario() {
+        return this.inventario;
+    }
+
 }
 
