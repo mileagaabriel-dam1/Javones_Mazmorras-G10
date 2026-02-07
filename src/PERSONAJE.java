@@ -37,4 +37,10 @@ public class PERSONAJE {
         
         System.out.println(nombre + " ha recibido " + cantidad + " puntos de daño. Vida restante: " + this.puntosVida);
     }
+    public void curar(int cantidad) {
+        this.puntosVida += cantidad;
+        System.out.println(nombre + " ha sido curado por " + cantidad + " puntos. Vida actual: " + this.puntosVida);
+        
+    }
 }
+
